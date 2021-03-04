@@ -62,7 +62,7 @@ namespace MUYA.Train
             //明细页面关闭后，刷新当前页面
             frm.FormClosed += (a, se) => BindData();
             //通用打开明细方法
-            MUYA.Utility.Utility.OpenDetialForm(this, frm,gridViewMain.GetFocusedDataRow(), "ID");
+            MUYA.Utility.Utility.OpenDetialForm(this, frm,gridViewMain.GetFocusedDataRow(), "编辑","ID");
         }
         /// <summary>
         /// 新增按钮
@@ -106,7 +106,7 @@ namespace MUYA.Train
         private void BindData()
         {
             var sqlParameter = new Dictionary<string, object>();
-            sqlParameter.Add("S1", setting);
+            sqlParameter.Add("S1", setting.ConvertTo(""));
             string sql = "select * from TRA_T1 where S1 = @S1 and IsDelete = 0 and IsEnable = 1";
             page.BindData(sql, "ID", sqlParameter);
             page.ShowColumns(true, "UpdateUser", "UpdateDate");

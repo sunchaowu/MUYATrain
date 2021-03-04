@@ -57,7 +57,7 @@ namespace MUYA.Train
         #endregion
 
         #region 初始化
-        private void FrmSiteEdit_Load(object sender, EventArgs e)
+        private void FrmT1Edit_Load(object sender, EventArgs e)
         {
             if (isnew)
             {
@@ -72,9 +72,16 @@ namespace MUYA.Train
             {
                 drMain = dsMain.Tables[0].Rows[idx];
             }
-            BindDataSource();
-            ReadData(xtraTabControl1.SelectedTabPage);
-            LoadLanguage();
+            try
+            {
+                BindDataSource();
+                ReadData(xtraTabControl1.SelectedTabPage);
+                LoadLanguage();
+            }
+            catch (Exception ex)
+            {
+                session.AppendLog("FrmT1Edit_Load", Lib.LogOPTTypeEnum.Error,ex.Message,ex.StackTrace);
+            }
         }
 
         private void ReadData(DevExpress.XtraTab.XtraTabPage tabPage)
@@ -138,6 +145,8 @@ namespace MUYA.Train
         /// </summary>
         private void BindDataSource()
         {
+            var set = MUYA.Utility.Utility.GetFrmFuncD(this.Tag, "Setting");
+            drMain["S1"] = set;
             txtS1.EditValue = drMain["S1"];
             txtS2.EditValue = drMain["S2"];
             txtSL1.EditValue = drMain["SL1"];
@@ -278,8 +287,8 @@ namespace MUYA.Train
                 drMain["SL1"] = txtSL1.EditValue;
                 drMain["Dec1"] = txtDec1.Value;
                 drMain["I1"] = txtI1.Value;
-                drMain["Dt1"] = txtDt1.DateTime;
-                drMain["Dt2"] = txtDt2.DateTime;
+                drMain["Dt1"] = txtDt1.EditValue ?? DBNull.Value;
+                drMain["Dt2"] = txtDt2.EditValue ?? DBNull.Value;
                 drMain["Img1"] = txtImg1.EditValue;
                 drMain["B1"] = txtB1.Checked;
                 drMain["S3"] = txtS3.EditValue;

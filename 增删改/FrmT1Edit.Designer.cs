@@ -646,7 +646,7 @@
             this.gridSL1.FieldName = "SL1";
             this.gridSL1.Name = "gridSL1";
             this.gridSL1.Visible = true;
-            this.gridSL1.VisibleIndex = 2;
+            this.gridSL1.VisibleIndex = 3;
             // 
             // repositoryItemLookUpSL1
             // 
@@ -681,7 +681,7 @@
             this.gridDec1.FieldName = "Dec1";
             this.gridDec1.Name = "gridDec1";
             this.gridDec1.Visible = true;
-            this.gridDec1.VisibleIndex = 3;
+            this.gridDec1.VisibleIndex = 4;
             // 
             // repositoryItemSpinDec1
             // 
@@ -697,7 +697,7 @@
             this.gridI1.FieldName = "I1";
             this.gridI1.Name = "gridI1";
             this.gridI1.Visible = true;
-            this.gridI1.VisibleIndex = 4;
+            this.gridI1.VisibleIndex = 5;
             // 
             // repositoryItemSpinI1
             // 
@@ -721,7 +721,7 @@
             this.gridDt1.FieldName = "Dt1";
             this.gridDt1.Name = "gridDt1";
             this.gridDt1.Visible = true;
-            this.gridDt1.VisibleIndex = 5;
+            this.gridDt1.VisibleIndex = 6;
             // 
             // repositoryItemDt1
             // 
@@ -738,7 +738,7 @@
             this.gridDt2.FieldName = "Dt2";
             this.gridDt2.Name = "gridDt2";
             this.gridDt2.Visible = true;
-            this.gridDt2.VisibleIndex = 6;
+            this.gridDt2.VisibleIndex = 7;
             // 
             // gridImg1
             // 
@@ -747,7 +747,7 @@
             this.gridImg1.FieldName = "Img1";
             this.gridImg1.Name = "gridImg1";
             this.gridImg1.Visible = true;
-            this.gridImg1.VisibleIndex = 7;
+            this.gridImg1.VisibleIndex = 8;
             // 
             // repositoryItemImageImg1
             // 
@@ -763,7 +763,7 @@
             this.gridB1.FieldName = "B1";
             this.gridB1.Name = "gridB1";
             this.gridB1.Visible = true;
-            this.gridB1.VisibleIndex = 8;
+            this.gridB1.VisibleIndex = 9;
             // 
             // repositoryItemCheckB1
             // 
@@ -776,7 +776,7 @@
             this.gridS3.FieldName = "S3";
             this.gridS3.Name = "gridS3";
             this.gridS3.Visible = true;
-            this.gridS3.VisibleIndex = 9;
+            this.gridS3.VisibleIndex = 2;
             // 
             // tabTD2
             // 
@@ -855,7 +855,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmT1Edit";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmSiteEdit_Load);
+            this.Load += new System.EventHandler(this.FrmT1Edit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtabControl2)).EndInit();

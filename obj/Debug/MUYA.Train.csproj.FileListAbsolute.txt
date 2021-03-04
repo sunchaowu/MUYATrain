@@ -1,4 +1,3 @@
-C:\Work\MUYA\LDP\MUYA.Train\obj\Debug\MUYA.Train.csprojAssemblyReference.cache
 C:\Work\MUYA\LDP\MUYA.Train\obj\Debug\MUYA.Train.FrmT1Edit.resources
 C:\Work\MUYA\LDP\MUYA.Train\obj\Debug\MUYA.Train.FrmT1List.resources
 C:\Work\MUYA\LDP\MUYA.Train\obj\Debug\MUYA.Train.csproj.GenerateResource.cache
@@ -191,3 +190,7 @@ C:\Work\MUYA\LDP\MUYA.Train\bin\Debug\ru\DevExpress.Spreadsheet.v17.2.Core.resou
 C:\Work\MUYA\LDP\MUYA.Train\obj\Debug\MUYA.Train.csproj.CopyComplete
 C:\Work\MUYA\LDP\MUYA.Train\obj\Debug\MUYA.Train.dll
 C:\Work\MUYA\LDP\MUYA.Train\obj\Debug\MUYA.Train.pdb
+C:\Work\Clients\MUYA.Client.Windows\bin\Debug\Plugin\MUYA.Train.dll
+C:\Work\Clients\MUYA.Client.Windows\bin\Debug\Plugin\MUYA.Train.pdb
+C:\Work\MUYA\LDP\Clients\MUYA.Client.Windows\bin\Debug\Plugin\MUYA.Train.dll
+C:\Work\MUYA\LDP\Clients\MUYA.Client.Windows\bin\Debug\Plugin\MUYA.Train.pdb

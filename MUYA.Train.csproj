@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Clients\MUYA.Client.Windows\bin\Debug\Plugin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -259,28 +259,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmT1Edit.cs">
+    <Compile Include="增删改\FrmT1Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmT1Edit.Designer.cs">
+    <Compile Include="增删改\FrmT1Edit.Designer.cs">
       <DependentUpon>FrmT1Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmT1List.cs">
+    <Compile Include="增删改\FrmT1List.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmT1List.Designer.cs">
+    <Compile Include="增删改\FrmT1List.Designer.cs">
       <DependentUpon>FrmT1List.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmT1Edit.resx">
+    <EmbeddedResource Include="增删改\FrmT1Edit.resx">
       <DependentUpon>FrmT1Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmT1List.resx">
+    <EmbeddedResource Include="增删改\FrmT1List.resx">
       <DependentUpon>FrmT1List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sql\Create.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
